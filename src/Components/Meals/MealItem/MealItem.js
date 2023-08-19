@@ -15,6 +15,10 @@ export default function MealItem(props) {
     })
     console.log("amount =============", amount)
   }
+  const removeProduct = ()=>{
+    props.removeProduct(props.id);
+  }
+
   return (
     <li className={classes.meal}>
       <div>
@@ -22,7 +26,7 @@ export default function MealItem(props) {
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
       </div>
-      <div><MealItemForm onAddCart={onAddCart}/></div>
+      <div><MealItemForm onAddCart={onAddCart} showOrders={props.showOrders} amount={props.amount} removeProduct = {removeProduct}/></div>
     </li>   
   );
 }
