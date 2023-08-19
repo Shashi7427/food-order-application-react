@@ -9,7 +9,7 @@ import classes from "../Components/Meals/AvailabelMeals.module.css";
 import MealItem from "../Components/Meals/MealItem/MealItem";
 import { useGlobalContext } from "../context";
 
-import main from "../assets/main.svg";
+import main from "../assets/main.png";
 import { Redirect } from "react-router-dom";
 // import { useGlobalContext } from '../context';
 function Home() {
