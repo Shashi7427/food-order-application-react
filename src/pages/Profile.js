@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import main from "../assets/main.svg";
+import main from "../assets/main.png";
 import { Redirect } from "react-router-dom";
 import { useGlobalContext } from "../context";
 import Header from "./../Components/Layout/Header";
